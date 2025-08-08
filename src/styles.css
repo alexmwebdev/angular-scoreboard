@@ -2,6 +2,7 @@
   /* https://getbootstrap.com/docs/5.3/customize/css-variables/ */
   --bs-body-bg: #53777A;
   --bs-body-color: #ECD078;
+  --bs-body-color-delete: #FF0000;
   --bs-body-font-family: 'Oswald', sans-serif;
   --bs-body-font-size: 1.4rem;
   --bs-link-color: var(--bs-body-color);
@@ -19,4 +20,11 @@
 .list-group-item {
   --bs-list-group-border-color: var(--bs-body-color);
   --bs-list-group-color: var(--bs-body-color);
+}
+.list-group-item .bi-x-square-fill {
+  --bs-list-group-border-color: var(--bs-body-color-delete);
+  --bs-list-group-color: var(--bs-body-color-delete);
+}
+.bi-check-circle {
+  margin-left:10px;
 }

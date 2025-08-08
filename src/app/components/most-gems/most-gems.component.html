@@ -1,4 +1,4 @@
-<h2 class="my-4">Most Gems</h2>
+<h2 class="my-4">Most Games Won</h2>
 
 <ul *ngIf="players$ | async as players; else loading" class="my-4">
   <li *ngFor="let player of players | sortByGemCount | slice : 0 : 5" [appOnlineStatus]="player.online">
