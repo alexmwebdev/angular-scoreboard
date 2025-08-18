@@ -17,7 +17,7 @@ export class MessagesComponent {
     public messageService: MessageService
   ) {
     effect(() => {
-      this.title.setTitle(`Gem Finder | Messages (${this.messageService.count()})`);
+      this.title.setTitle(`Scoreboard | Messages (${this.messageService.count()})`);
     });
   }
 

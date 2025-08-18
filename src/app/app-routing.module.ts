@@ -6,18 +6,18 @@ const routes: Routes = [
   {
     path: 'profile/:id',
     loadComponent: () => import('./pages/profile/profile.component').then(m => m.ProfileComponent),
-    title: (route: ActivatedRouteSnapshot) => `Gem Finder | Profile for ${route.paramMap.get('id')}`
+    title: (route: ActivatedRouteSnapshot) => `Scoreboard | Profile for ${route.paramMap.get('id')}`
   },
   {
     path: 'players',
     loadChildren: () => import('./pages/players/players.module').then(m => m.PlayersModule),
-    title: 'Gem Finder | All Players',
+    title: 'Scoreboard | All Players',
     data: { preload: true }
   },
   {
     path: 'leaderboards',
     loadChildren: () => import('./pages/leaderboards/leaderboards.module').then(m => m.LeaderboardsModule),
-    title: 'Gem Finder | Leaderboards'
+    title: 'Scoreboard | Leaderboards'
   },
   {
     path: 'messages',
